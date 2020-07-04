@@ -14,7 +14,7 @@ function App() {
 
 //第一个参数 初始化state
 const initState = {count:0}
-//第二个参数 reducer函数 (state,action) => newstate 经过不同的action.type后返回新的state 
+//第二个参数 reducer函数 (state,action) => newstate 经过不同的action.type后返回新的state 利用action提供的信息state=> new state
 //接受当前应用的state和action.type后返回新的state  reducer幂等性
 /**
  * 1.reducer处理的state对象immutable的，即永远不要直接修改state对象，reducer函数每次都返回一个新的state对象 
@@ -33,6 +33,14 @@ const initState = {count:0}
             }
         }
     }
+
+
+  reducer使用场景：
+  如果你的state是一个数组或者对象。
+  如果你的state变化很复杂，经常一个操作需要修改很多state。
+  如果你希望构建自动化测试用例来保证程序的稳定性。
+  如果你需要在深层子组件里面去修改一些状态。
+  如果你用应用程序比较大，希望UI和业务能够分开维护。
  */
 function reducer(state,action){
 switch (action.type) {

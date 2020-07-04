@@ -8,7 +8,7 @@
 3.babel.js  ES6转换成ES5  JSX语法转换成javascript 现今浏览器进行代码的兼容
 react 核心包      npm i react --save
 react-dom         npm i react-dom --save
-babel                  npm i babel-standalone --save
+babel             npm i babel-standalone --save
 
 map遍历 map（(v,i)=>{ return (<p>{v}</p>) }）
 
@@ -45,11 +45,6 @@ state：组件的状态 组件对内的接口
 this.setState({ ...  }) 异步 ，更改state
 
 ## 3.refs转发
-
-    // 1、字符串的方式
-        // 2.回调函数（推荐）
-            // 就是在dom节点上或者组件上挂在函数  函数的入参形参 是dom接地那  他的效果和字符串的方式是一样的都是获取值得引用
-        // 3.React.createRef()（react16.3新提供的一种方式）
 
 1.字符串方式
 
